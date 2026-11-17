@@ -23,5 +23,4 @@ def Solution():
         ycoord += (coords[1]-1)*5**((length-1)-i)
     return [xcoord+1, ycoord+1]
 
-while True:
-    print(Solution())
+print(Solution())

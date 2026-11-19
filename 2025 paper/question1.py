@@ -29,7 +29,15 @@ def find_sum(target):
                 if len(temp) == 2:
                     return [i] + temp
 
-start_time = time.perf_counter()
-print(find_sum(109812))
-end_time = time.perf_counter()
-print(end_time-start_time)
+# start_time = time.perf_counter()
+# print(find_sum(54))
+# end_time = time.perf_counter()
+# print(end_time-start_time)
+
+total = 0
+for i in range(1,1000001):
+    if not is_palindrome(i):
+        if find_2_sum(i) == []:
+            total += 1
+            print(i)
+print(total)
